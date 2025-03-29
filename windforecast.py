@@ -47,9 +47,9 @@ def check_wind_conditions():
         print(message)
         send_tm(message)
     else:
-        print("No hay condiciones favorables en las próximas 72 horas.")
+        send_tm("No hay condiciones favorables en las próximas 72 horas.")
 
 # Ejecutar periódicamente
-while True:
-    check_wind_conditions()
-    time.sleep(CHECK_INTERVAL)
+check_wind_conditions()
+
+
