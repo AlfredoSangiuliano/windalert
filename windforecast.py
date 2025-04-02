@@ -1,7 +1,6 @@
 import requests
 import time
 from datetime import datetime, timedelta
-from bot_module.secret_vault import *
 from bot_module.bot_manager import *
 
 

@@ -1,5 +1,9 @@
 import requests
-from bot_module.secret_vault import *
+import os
+
+chat_id = os.getenv("CHAT_ID")
+bot_token = os.getenv("BOT_TOKEN")
+weather_api_key = os.getenv("API_KEY")
 
 def send_tm(message):
     chat_id
