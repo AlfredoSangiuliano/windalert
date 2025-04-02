@@ -69,6 +69,6 @@ while True:
     # Ejecutar periódicamente
     print(datetime.now())
     check_wind_conditions()
-    send_tm(f'sleeping {CHECK_INTERVAL/3600} hours...' )
+    send_tm(f'Esperando {CHECK_INTERVAL/3600} hours...' )
     time.sleep(CHECK_INTERVAL)
 
