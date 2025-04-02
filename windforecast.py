@@ -8,7 +8,7 @@ from bot_module.bot_manager import *
 API_KEY = weather_api_key  # Reemplaza con tu clave de OpenWeatherMap
 LAT = -34.6  # Buenos Aires
 LON = -58.4
-CHECK_INTERVAL = 10  # 24 horas en segundos
+CHECK_INTERVAL = 86400  # 24 horas en segundos
 MAX_LIMIT = 50
 MIN_LIMIT = 13
 
@@ -48,7 +48,9 @@ def check_wind_conditions():
     else:
         send_tm("No hay condiciones favorables en las próximas 72 horas.")
 
-# Ejecutar periódicamente
-check_wind_conditions()
-
+while True:
+    # Ejecutar periódicamente
+    print(datetime.now())
+    check_wind_conditions()
+    time.sleep(20)
 
