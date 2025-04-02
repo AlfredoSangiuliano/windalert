@@ -3,11 +3,10 @@ import time
 from datetime import datetime, timedelta
 from bot_module.bot_manager import *
 
-
 # Configuración
 API_KEY = weather_api_key  # Reemplaza con tu clave de OpenWeatherMap
-LAT = -34.6  # Buenos Aires
-LON = -58.4
+LAT = -34.459318  # Club Tribunales, San Isidro
+LON = -58.502036
 CHECK_INTERVAL = 86400  # 24 horas en segundos
 MAX_LIMIT = 50
 MIN_LIMIT = 13
