@@ -6,6 +6,7 @@ bot_token = os.getenv("BOT_TOKEN")
 weather_api_key = os.getenv("API_KEY")
 
 def send_tm(message):
+    print(message)
     chat_id
     bot_token
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
