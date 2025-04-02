@@ -52,5 +52,6 @@ while True:
     # Ejecutar periódicamente
     print(datetime.now())
     check_wind_conditions()
+    print(f'sleeping {CHECK_INTERVAL/3600} hours...' )
     time.sleep(CHECK_INTERVAL)
 
