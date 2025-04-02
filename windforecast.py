@@ -52,5 +52,5 @@ while True:
     # Ejecutar periódicamente
     print(datetime.now())
     check_wind_conditions()
-    time.sleep(20)
+    time.sleep(CHECK_INTERVAL)
 
